@@ -1,0 +1,6 @@
+<% @articles.each do |article| %>
+  <div class="my-3 border-bottom">
+    <h4><%= link_to article.title, article_path(article), class: 'text-info' %></h4>
+    <p><%= article.content[0..90].gsub(/\s\w+$/,'...') %></p>
+  </div>
+<% end %>

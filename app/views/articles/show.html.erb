@@ -1,0 +1,8 @@
+
+<div class="pb-3 mb-4 border-bottom">
+  <%= link_to 'Edit this article', edit_article_path(@article), class: 'btn btn-info' %>
+  <%= link_to 'Delete this article', destroy_article_path(@article), method: :delete, class: 'btn btn-danger ml-2' %>
+</div>
+
+<h1 class="mb-4"><%= @article.title %></h1>
+<p><%= @article.content %></p>
